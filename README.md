@@ -15,7 +15,7 @@ Aplicación móvil desarrollada en **React Native** con **Expo** para el Parcial
 
 ## Video DEMO
 
-* **Enlace al video:** [https://drive.google.com/file/d/1-J7qv8MzUnDPpzPtGYtYGGgTnwwfOxMH/view?usp=sharing](https://youtu.be/TU_ENLACE_AQUI) *(Duración: < 1 minuto)*
+* **Enlace al video:** ([Link](https://youtu.be/RhRB36Eieb8)) *(Duración: < 1 minuto)*
 
 ---
 
