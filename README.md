@@ -71,7 +71,8 @@ La aplicación cumple con todos los requisitos técnicos obligatorios de la cons
 
 ---
 
-* **Test corrido!`[img.png](img.png)`
+* **Test corrido!`<img width="1011" height="994" alt="image" src="https://github.com/user-attachments/assets/15e1464d-84c0-4963-868c-56f463486ef0" />
+`
 
 ## Instrucciones de Instalación y Ejecución
 
