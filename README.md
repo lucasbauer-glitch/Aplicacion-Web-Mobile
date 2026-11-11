@@ -15,7 +15,7 @@ Aplicación móvil desarrollada en React Native con Expo (SDK 58) para el Parcia
 
 ## Video DEMO
 
-- **Enlace al video:** ([https://youtu.be/TU_ENLACE_AQUI](https://www.youtube.com/shorts/JbSnZcscgLY)) *(Duración: < 2 minutos)*
+- **Enlace al video:** ([https://youtu.be/](https://www.youtube.com/shorts/JbSnZcscgLY)) *(Duración: < 2 minutos)*
 
 ---
 
@@ -73,6 +73,8 @@ La aplicación cumple con todos los requisitos técnicos obligatorios de la cons
 - **Testing:** `jest`, `jest-expo`, `@testing-library/react-native`
 
 ---
+##Test Corridos.
+<img width="990" height="494" alt="image" src="https://github.com/user-attachments/assets/c80d5f11-243d-4d25-883b-18b1b4148dc3" />
 
 ## Instrucciones de Instalación y Ejecución
 
@@ -80,3 +82,9 @@ La aplicación cumple con todos los requisitos técnicos obligatorios de la cons
    ```bash
    git clone <URL_DEL_REPOSITORIO>
    cd ListaDeCompras
+2. **Instalar dependencias**
+    ```bash
+   yarn install
+2. **Ejecutar la aplicacion**
+    ```bash
+   npx expo start
