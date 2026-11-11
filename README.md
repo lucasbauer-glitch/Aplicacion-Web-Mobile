@@ -15,7 +15,7 @@ Aplicación móvil desarrollada en React Native con Expo (SDK 58) para el Parcia
 
 ## Video DEMO
 
-- **Enlace al video:** [https://youtube.com/shorts/JbSnZcscgLY](https://youtu.be/TU_ENLACE_AQUI) *(Duración: < 2 minutos)*
+- **Enlace al video:** ([https://youtu.be/TU_ENLACE_AQUI](https://www.youtube.com/shorts/JbSnZcscgLY)) *(Duración: < 2 minutos)*
 
 ---
 
