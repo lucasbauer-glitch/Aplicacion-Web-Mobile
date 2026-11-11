@@ -1,46 +1,61 @@
-import React from "react";
-import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
+import React from 'react';
+import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
 
 interface ProductItemProps {
   name: string;
-  onDelete: () => void;
+  imageUri?: string | null;
+  onDelete?: () => void;
 }
 
-export default function ProductItem({ name, onDelete }: ProductItemProps) {
+export default function ProductItem({ name, imageUri, onDelete }: ProductItemProps) {
   return (
-    <View style={styles.container}>
-      <Text style={styles.name}>{name}</Text>
-      <TouchableOpacity
-        testID="delete-button"
-        onPress={onDelete}
-        style={styles.deleteButton}
-      >
-        <Text style={styles.deleteText}>Eliminar</Text>
-      </TouchableOpacity>
+    <View style={styles.card}>
+      {imageUri ? (
+        <Image source={{ uri: imageUri }} style={styles.thumbnail} />
+      ) : (
+        <View style={[styles.thumbnail, styles.placeholder]} />
+      )}
+
+      <Text style={styles.productName}>{name}</Text>
+
+      {onDelete && (
+        <TouchableOpacity onPress={onDelete} style={styles.deleteButton} testID="delete-button">
+          <Text style={styles.deleteText}>❌</Text>
+        </TouchableOpacity>
+      )}
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    backgroundColor: "#f4f4f4",
-    padding: 14,
+  card: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#f9f9f9',
+    padding: 10,
     borderRadius: 8,
-    marginBottom: 8,
+    marginBottom: 10,
+    borderWidth: 1,
+    borderColor: '#eee',
   },
-  name: {
+  thumbnail: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    marginRight: 12,
+  },
+  placeholder: {
+    backgroundColor: '#ccc',
+  },
+  productName: {
+    flex: 1,
     fontSize: 16,
-    color: "#333",
+    color: '#333',
   },
   deleteButton: {
-    paddingVertical: 4,
-    paddingHorizontal: 8,
+    padding: 5,
   },
   deleteText: {
-    color: "#FF3B30",
-    fontWeight: "bold",
+    fontSize: 14,
   },
 });

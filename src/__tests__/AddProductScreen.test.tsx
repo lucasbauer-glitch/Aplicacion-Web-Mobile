@@ -22,12 +22,12 @@ describe("AddProductScreen - Interacción", () => {
   it("renderiza el título y el campo de texto", () => {
     render(<AddProductScreen navigation={mockNavigation} route={{} as any} />);
     expect(screen.getByText("Nuevo Producto")).toBeTruthy();
-    expect(screen.getByPlaceholderText("Ej: Leche, Yerba, Pan...")).toBeTruthy();
+    expect(screen.getByPlaceholderText("Nombre del producto")).toBeTruthy();
   });
 
   it("permite escribir en el campo de texto del producto", () => {
     render(<AddProductScreen navigation={mockNavigation} route={{} as any} />);
-    const input = screen.getByPlaceholderText("Ej: Leche, Yerba, Pan...");
+    const input = screen.getByPlaceholderText("Nombre del producto");
 
     fireEvent.changeText(input, "Fideos");
     expect(input.props.value).toBe("Fideos");
